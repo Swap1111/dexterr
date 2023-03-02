@@ -1,41 +1,48 @@
-<!DOCTYPE html>   
-<html>   
-<head>  
-    <style>
-        
-        .btn{
-        background-color:palevioletred;
-        color: white;
-        border: none;
-    
-        padding: 5px 15px;
-        border-radius: 15px;
-        cursor: pointer;
-        margin-left: 10px;
-    }
-    .btn:hover{
-        background-color: brown;
-        opacity: 0.4;
-        transition-duration: 2ms;
-        
+<!--https://codewithsantosh.github.io/Loginform/-->
+<!--version 1-->
+<!--version 1-->
 
-    }
-        .form{
-            padding: 4px 14px;
-        }
-    </style>  
-</head>    
-<body bgcolor="antiquewhite">    
-    <center> <h1> Login </h1>   
-    <form class="form">
-        <div class="form-group">
-            <input type="text" name="" placeholder="Username">
-        </div>
-        
-        <div class="form-group">
-            <input type="password" name="" placeholder="password">
-        </div>
-        <button class="btn">Submit</button><a href="">sign up</a>
-    </form>   </center>
-</body>     
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div class="container">
+    <div class="subContainer">
+        <h2>LOGIN</h2>
+            <form action="">
+                <div class="form-container">
+                    <label for="">Username</label><br>
+                    <input id="user" type="text" placeholder="Type your username">
+                </div>
+                <div class="form-container">
+                    <label for="">Password</label><br>
+
+                    <input id="pass"type="password" placeholder="Type your password">
+                </div>
+                <div class="form-container">
+                    <button onclick="myfun()">LOGIN</button>
+                </div>
+
+            </form>
+
+    </div>
+
+    </div>
+</body>
+<script>
+ function myfun(){
+let user=document.getElementById("user").value;
+let pass=document.getElementById("pass").value;
+alert("Your user name "+user+" password "+pass);
+
+ }
+</script>
 </html>
