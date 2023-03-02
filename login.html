@@ -20,12 +20,12 @@
             <form action="">
                 <div class="form-container">
                     <label for="">Username</label><br>
-                    <input id="user" type="text" placeholder="Type your username">
+                    <input id="user" type="text" placeholder="Type your username" required>
                 </div>
                 <div class="form-container">
                     <label for="">Password</label><br>
 
-                    <input id="pass"type="password" placeholder="Type your password">
+                    <input id="pass"type="password" placeholder="Type your password" required>
                 </div>
                 <div class="form-container">
                     <button onclick="myfun()">LOGIN</button>
@@ -41,7 +41,12 @@
  function myfun(){
 let user=document.getElementById("user").value;
 let pass=document.getElementById("pass").value;
-alert("Your user name "+user+" password "+pass);
+if((user=="" && pass=="")||(user=="" || pass=="")){
+
+}else{
+    alert("Your user name "+user+" password "+pass);
+
+}
 
  }
 </script>
